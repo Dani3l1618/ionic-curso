@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Color</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="color" class="color-container" >
+    <div class ="rectangle" [ngStyle]="{'background-color':color.color}"> </div>
+    <ion-card-header>
+      <ion-card-subtitle> {{color.color}}</ion-card-subtitle>
+      <ion-card-title class="colortitle">{{color.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div>{{'Del año ' + color.year +'.'}}</div>
+      <div>{{'Tiene como código Pantone: ' + color.pantone_value}}</div> 
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

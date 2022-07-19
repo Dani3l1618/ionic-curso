@@ -1,0 +1,15 @@
+.user-container{
+    display: flex;
+    flex-direction: column;
+    padding: 24 px;
+
+    img{
+        height: 128px;
+        width: 128 px;
+        align-self: center;
+    }
+    h1{
+        font-size: 48 px;
+        color: aqua;
+    }
+}

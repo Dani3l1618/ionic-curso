@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="user-container" *ngIf="user">
+    <img [src]="user.avatar"/>
+    <h1>{{user.first_name +' '+ user.last_name}}</h1>
+    <h3>{{user.email}}</h3>
+    <p>{{'ID: ' + user.id}}</p>
+  </div>
+
+</ion-content>

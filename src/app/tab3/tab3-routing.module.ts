@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: Tab3Page,
-  }
+  }, 
+  {
+    path: 'color/:id',
+    loadChildren: () => import('../color/color.module').then( m => m.ColorPageModule)
+  },
 ];
 
 @NgModule({

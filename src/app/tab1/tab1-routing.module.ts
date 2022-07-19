@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
+  },
+  {
+    path: 'user/:id',
+    loadChildren: () => import('../user/user.module').then( m => m.UserPageModule)
   }
 ];
 

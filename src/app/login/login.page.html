@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-container" [formGroup]="formLogin">
+    <img src="../../assets/axity.png" alt="axity">
+    <ion-item>
+      
+      <ion-label>Usuario</ion-label>
+      <ion-input formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+
+    <ion-button 
+        (click)='loginClick()'
+        class="login-button" 
+        expand="block" 
+        [disabled]="formLogin.invalid">
+      Ingresar
+    </ion-button>
+  </div>
+</ion-content>
